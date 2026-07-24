@@ -66,21 +66,15 @@ export default function Home() {
           <AppMark />
           <span>Tracky</span>
         </a>
-        <span className="beta-label">Local-first · iPhone</span>
       </nav>
 
       <section className="hero shell" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Your life, in your own words</p>
           <h1>Notice where your time goes.</h1>
           <p className="lede">
             Track what you do, log what matters, and find the patterns hiding in
             an ordinary day.
           </p>
-          <div className="availability">
-            <span className="status-dot" />
-            <span>Built for iPhone</span>
-          </div>
         </div>
 
         <div className="hero-visual" aria-label="Tracky app preview">
@@ -143,14 +137,13 @@ export default function Home() {
         <p className="eyebrow">Track less. Notice more.</p>
         <h2>Built to become yours.</h2>
         <p className="closing-copy">
-          Tracky is an independent, local-first iPhone app being shaped into
-          its first release.
+          Tracky is an independent, local-first iPhone app that respects your
+          privacy.
         </p>
       </section>
 
       <footer className="footer shell">
-        <span>© {new Date().getFullYear()} Tracky</span>
-        <span>Made in Berlin</span>
+        <a href="https://desprets.net">Made with love by Ben Desprets</a>
       </footer>
     </main>
   );
