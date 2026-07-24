@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   description:
     "A private, local-first iPhone app for tracking your day and anything else that matters to you.",
   applicationName: "Tracky",
+  icons: {
+    icon: "/tracky-icon.png",
+    apple: "/tracky-icon.png",
+  },
   openGraph: {
     title: "Tracky — Notice where your time goes",
     description:

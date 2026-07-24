@@ -20,12 +20,14 @@ const features = [
 
 function AppMark() {
   return (
-    <span className="app-mark" aria-hidden="true">
-      <span className="mark-arrow">→</span>
-      <span className="mark-line mark-line-one" />
-      <span className="mark-line mark-line-two" />
-      <span className="mark-check">✓</span>
-    </span>
+    <Image
+      className="app-mark"
+      src="/tracky-icon.png"
+      alt=""
+      width={152}
+      height={152}
+      aria-hidden="true"
+    />
   );
 }
 
@@ -64,7 +66,7 @@ export default function Home() {
           <AppMark />
           <span>Tracky</span>
         </a>
-        <span className="beta-label">Private beta · iPhone</span>
+        <span className="beta-label">Local-first · iPhone</span>
       </nav>
 
       <section className="hero shell" id="top">
@@ -77,7 +79,7 @@ export default function Home() {
           </p>
           <div className="availability">
             <span className="status-dot" />
-            <span>In TestFlight now</span>
+            <span>Built for iPhone</span>
           </div>
         </div>
 
@@ -141,8 +143,8 @@ export default function Home() {
         <p className="eyebrow">Track less. Notice more.</p>
         <h2>Built to become yours.</h2>
         <p className="closing-copy">
-          Tracky is an independent, local-first iPhone app currently being
-          tested with a small group of people.
+          Tracky is an independent, local-first iPhone app being shaped into
+          its first release.
         </p>
       </section>
 
