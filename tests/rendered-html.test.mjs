@@ -21,7 +21,6 @@ test("contains the Tracky landing page content", async () => {
     page,
     /href="https:\/\/desprets\.net">Made with love by Ben Desprets/,
   );
-  assert.match(page, /Captured in the iOS Simulator/);
   assert.match(page, /\/screens\/track\.jpg/);
   assert.match(page, /\/screens\/history\.jpg/);
   assert.match(page, /\/screens\/day\.jpg/);
@@ -30,6 +29,7 @@ test("contains the Tracky landing page content", async () => {
   assert.doesNotMatch(page, /Built for iPhone/);
   assert.doesNotMatch(page, /Your life, in your own words/i);
   assert.doesNotMatch(page, /Local-first · iPhone/i);
+  assert.doesNotMatch(page, /Captured in the iOS Simulator/i);
   assert.doesNotMatch(page, /Made in Berlin|©/);
 
   assert.match(layout, /https:\/\/tracky\.desprets\.net/);

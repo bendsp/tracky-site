@@ -92,7 +92,6 @@ export default function Home() {
             className="phone-secondary"
             priority
           />
-          <p className="capture-note">Captured in the iOS Simulator</p>
         </div>
       </section>
 
